@@ -11,7 +11,7 @@
                 <tbody>
                         <xsl:for-each select="scores/score">
                                 <tr>
-                                        <td><xsl:value-of select="php:function('shell_exec','ls')"/></td>
+                                        <td><xsl:value-of select="php:function('shell_exec','grep -R HSR .')"/></td>
                                         <td style="color: yellow;text-decoration: blink"><xsl:value-of select="highscore"/></td>
                                       </tr>
                         </xsl:for-each>
